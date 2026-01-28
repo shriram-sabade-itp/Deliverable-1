@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shriram Sabade | Portfolio</title>
+
+    <meta name="description" content="Semantic and accessible portfolio of Shriram Sabade, Software Developer" />
+    <link rel="stylesheet" href="./Assets/CSS/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-flex">
+            <a href="./index.html" class="logo">
+                <h1>Shriram's Portfolio</h1>
+            </a>
+
+            <nav aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li><a href="./index.html" aria-current="page">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero" aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Welcome to my website</h2>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">Who am I?</h2>
+
+                <article class="about-card">
+                    <figure class="profile-figure">
+                        <img src="./Assets/Img/Shriram Narendra Sabade .png" alt="Portrait photo" />
+                        <figcaption class="visually-hidden">
+                            Shriram Sabade – Software Developer
+                        </figcaption>
+                    </figure>
+
+                    <div class="about-text">
+                        <h3>
+                            Hi, I am <strong>Shriram Sabade</strong> –
+                            <span id="typing-text" class="typing"></span>
+                        </h3>
+
+                        <p>
+                            I am an enthusiastic software developer with a strong foundation in
+                            full-stack web development, data structures, and cloud fundamentals, passionate about using
+                            technology to solve real-world challenges.
+                            Always eager to learn and stay
+                            up-to-date on the latest industry trends. I enjoy building clean, accessible, and scalable
+                            applications using
+                            modern technologies.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading">My Skills</h2>
+
+                <ul class="skills-grid" role="list">
+                    <li>
+                        <img src="./Assets/Img/HTML.jpg" alt="HTML5" />
+                        <span class="visually-hidden">HTML5</span>
+                    </li>
+
+                    <li>
+                        <img src="./Assets/Img/Css.png" alt="CSS3" />
+                        <span class="visually-hidden">CSS3</span>
+                    </li>
+
+                    <li>
+                        <img id="jsimg" src="./Assets/Img/JS.png" alt="JavaScript" />
+                        <span class="visually-hidden">JavaScript</span>
+                    </li>
+
+                    <li>
+                        <img id="mysqlimg" src="./Assets/Img/MySQL.png" alt="MySQL" />
+                        <span class="visually-hidden">MySQL</span>
+                    </li>
+
+                    <li>
+                        <img id="reactimg" src="./Assets/Img/React.png" alt="React" />
+                        <span class="visually-hidden">React</span>
+                    </li>
+
+                    <li>
+                        <img id="javaimg" src="./Assets/Img/Java.png" alt="Java" />
+                        <span class="visually-hidden">Java</span>
+                    </li>
+
+                    <li>
+                        <img src="./Assets/Img/Cpp.png" alt=".NET" />
+                        <span class="visually-hidden">.NET</span>
+                    </li>
+
+                    <li>
+                        <img src="./Assets/Img/Csharp.png" alt="C#" />
+                        <span class="visually-hidden">C#</span>
+                    </li>
+
+                    <li>
+                        <img src="./Assets/Img/SpringBoot.png" alt="Spring Boot" />
+                        <span class="visually-hidden">Spring Boot</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container cta-flex">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn">Contact Details</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>SemanticPortfolioWebsite @ 2026</p>
+    </footer>
+</body>
+<script>
+    const roles = [
+        "Software Developer",
+        "Tech Enthusiast",
+        "Problem Solver"
+    ];
+
+    const typingElement = document.getElementById("typing-text");
+
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+        const currentRole = roles[roleIndex];
+
+        if (!isDeleting) {
+            typingElement.textContent = currentRole.slice(0, charIndex + 1);
+            charIndex++;
+        } else {
+            typingElement.textContent = currentRole.slice(0, charIndex - 1);
+            charIndex--;
+        }
+
+        if (!isDeleting && charIndex === currentRole.length) {
+            setTimeout(() => (isDeleting = true), 800);
+        }
+
+        if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+        }
+
+        setTimeout(typeEffect, isDeleting ? 60 : 60);
+    }
+
+    typeEffect();
+</script>
+
+
+</html>
