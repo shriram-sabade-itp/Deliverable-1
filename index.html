@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shriram Sabade | Portfolio</title>
-
+    <link rel="icon" href="./Assets/Img/favicon.ico" type="image/x-icon">
     <meta name="description" content="Semantic and accessible portfolio of Shriram Sabade, Software Developer" />
     <link rel="stylesheet" href="./Assets/CSS/styles.css" />
 </head>
 
-<body>
+<body class="home-page">
     <header class="site-header">
         <div class="container header-flex">
             <a href="./index.html" class="logo">
@@ -20,17 +20,18 @@
             <nav aria-label="Primary navigation">
                 <ul class="nav-list">
                     <li><a href="./index.html" aria-current="page">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!--Main Content -->
     <main id="main-content">
         <section id="home" class="hero" aria-labelledby="welcome-heading">
-            <h2 id="welcome-heading">Welcome to my website</h2>
+            <h2 id="welcome-heading">Welcome To My Website!</h2>
         </section>
 
         <!-- About Section -->
@@ -42,7 +43,7 @@
                     <figure class="profile-figure">
                         <img src="./Assets/Img/Shriram Narendra Sabade .png" alt="Portrait photo" />
                         <figcaption class="visually-hidden">
-                            Shriram Sabade – Software Developer
+                            Shriram Sabade - Software Developer
                         </figcaption>
                     </figure>
 
@@ -73,48 +74,99 @@
 
                 <ul class="skills-grid" role="list">
                     <li>
-                        <img src="./Assets/Img/HTML.jpg" alt="HTML5" />
-                        <span class="visually-hidden">HTML5</span>
+                        <figure class="skill-item">
+                            <img src="./Assets/Img/HTML.jpg" alt="HTML5" />
+                            <figcaption>HTML5</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">HTML5</span>
+                        </figure>
                     </li>
 
                     <li>
-                        <img src="./Assets/Img/Css.png" alt="CSS3" />
-                        <span class="visually-hidden">CSS3</span>
+                        <figure class="skill-item">
+                            <img src="./Assets/Img/Css.png" alt="CSS3" />
+                            <figcaption>CSS3</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">CSS3</span>
+                        </figure>
                     </li>
 
                     <li>
-                        <img id="jsimg" src="./Assets/Img/JS.png" alt="JavaScript" />
-                        <span class="visually-hidden">JavaScript</span>
+                        <figure class="skill-item">
+                            <img id="jsimg" src="./Assets/Img/JS.png" alt="JavaScript" />
+                            <figcaption>JavaScript</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">JavaScript</span>
+                        </figure>
                     </li>
 
                     <li>
-                        <img id="mysqlimg" src="./Assets/Img/MySQL.png" alt="MySQL" />
-                        <span class="visually-hidden">MySQL</span>
+                        <figure class="skill-item">
+                            <img id="mysqlimg" src="./Assets/Img/MySQL.png" alt="MySQL" />
+                            <figcaption>MySQL</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">MySQL</span>
+                        </figure>
                     </li>
 
                     <li>
-                        <img id="reactimg" src="./Assets/Img/React.png" alt="React" />
-                        <span class="visually-hidden">React</span>
+                        <figure class="skill-item">
+                            <img id="reactimg" src="./Assets/Img/Docker.png" alt="Docker" />
+                            <figcaption>Docker</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">Docker</span>
+                        </figure>
                     </li>
 
                     <li>
-                        <img id="javaimg" src="./Assets/Img/Java.png" alt="Java" />
-                        <span class="visually-hidden">Java</span>
+                        <figure class="skill-item">
+                            <img id="reactimg" src="./Assets/Img/React.png" alt="React" />
+                            <figcaption>React</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">React</span>
+                        </figure>
                     </li>
 
                     <li>
-                        <img src="./Assets/Img/Cpp.png" alt=".NET" />
-                        <span class="visually-hidden">.NET</span>
+                        <figure class="skill-item">
+                            <img id="javaimg" src="./Assets/Img/Java.png" alt="Java" />
+                            <figcaption>Java</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">Java</span>
+                        </figure>
                     </li>
 
                     <li>
-                        <img src="./Assets/Img/Csharp.png" alt="C#" />
-                        <span class="visually-hidden">C#</span>
+                        <figure class="skill-item">
+                            <img id="reactimg" src="./Assets/Img/Python.png" alt="Python" />
+                            <figcaption>Python</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">Python</span>
+                        </figure>
                     </li>
 
                     <li>
-                        <img src="./Assets/Img/SpringBoot.png" alt="Spring Boot" />
-                        <span class="visually-hidden">Spring Boot</span>
+                        <figure class="skill-item">
+                            <img src="./Assets/Img/Bootstrap.png" alt="Bootstrap" />
+                            <figcaption>Bootstrap</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">Bootstrap</span>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="skill-item">
+                            <img src="./Assets/Img/Cpp.png" alt="CPP" />
+                            <figcaption>C++</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">C++</span>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="skill-item">
+                            <img src="./Assets/Img/Csharp.png" alt="C#" />
+                            <figcaption>C#</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">C#</span>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="skill-item">
+                            <img id="springbootimg" src="./Assets/Img/SpringBoot.png" alt="Spring Boot" />
+                            <figcaption>Spring Boot</figcaption>
+                            <span class="skill-tooltip" aria-hidden="true">Springboot</span>
+                        </figure>
                     </li>
                 </ul>
             </div>
@@ -124,15 +176,15 @@
         <!-- CTA Section -->
         <section class="cta-section">
             <div class="container cta-flex">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn">Contact Details</a>
+                <a href="./projects.html" class="btn">View Projects</a>
+                <a href="./contact.html" class="btn">Contact Details</a>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
-        <p>SemanticPortfolioWebsite @ 2026</p>
+        <p>PortfolioWebsite @ 2026</p>
     </footer>
 </body>
 <script>
