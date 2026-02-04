@@ -75,15 +75,6 @@ Spring Boot, .NET Web API, React.js, Bootstrap, MySQL, AWS S3
 
 ---
 
-## 📬 Contact
-
-- **Email:** [shriramnsabade@gmail.com](mailto:shriramnsabade@gmail.com)
-- **Location:** Raigad, Maharashtra, India
-
-Feel free to reach out for collaboration, internships, or full-time opportunities.
-
----
-
 ## 📄 License
 
 This project is open-source and available for learning and inspiration.  
@@ -92,6 +83,7 @@ Feel free to fork and customize it for your own use.
 ---
 
 ⭐ If you like this portfolio, consider giving the repository a star!
+
 
 
 
