@@ -7,8 +7,7 @@ Designed with a clean dark theme, smooth interactions, and a strong focus on usa
 ---
 
 ## 🌐 Live Demo
-👉 **[View Portfolio](#)**  
-*(Replace `#` with your deployed link – Netlify / GitHub Pages / Vercel)*
+👉 **[View Portfolio]([https://sam-2-0-0-2.github.io/Portfolio-website/index.html)**
 
 ---
 
@@ -43,20 +42,6 @@ Designed with a clean dark theme, smooth interactions, and a strong focus on usa
 - **Bootstrap Icons**
 
 *(No heavy frameworks – focused on fundamentals and performance)*
-
----
-
-## 📂 Project Structure
-├── index.html
-├── about.html
-├── projects.html
-├── contact.html
-├── Assets/
-│ ├── CSS/
-│ │ └── styles.css
-│ └── Img/
-└── README.md
-
 
 ---
 
@@ -107,3 +92,4 @@ Feel free to fork and customize it for your own use.
 ---
 
 ⭐ If you like this portfolio, consider giving the repository a star!
+
